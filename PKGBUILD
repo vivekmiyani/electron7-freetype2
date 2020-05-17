@@ -171,6 +171,7 @@ build() {
     use_custom_libcxx = false
     use_gnome_keyring = false
     use_sysroot = false
+    use_system_freetype = true
   '
   gn gen out/Release \
       --args="import(\"//electron/build/args/release.gn\") $GN_EXTRA_ARGS"
